@@ -1,0 +1,4 @@
+// standard retina media query
+=retina-display($device-resolution: 130em, $device-pixel-ratio: 2)
+  @media only screen and (-webkit-min-device-pixel-ratio: $device-pixel-ratio) and ($device-resolution), screen and (min--moz-device-pixel-ratio: $device-pixel-ratio) and ($device-resolution), screen and (-o-min-device-pixel-ratio: $device-pixel-ratio/1) and ($device-resolution), screen and (min-device-pixel-ratio: $device-pixel-ratio) and ($device-resolution), screen and (min-resolution: 192dpi) and ($device-resolution), screen and (min-resolution: 2dppx) and ($device-resolution)
+    @content
