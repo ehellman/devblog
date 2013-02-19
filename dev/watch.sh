@@ -6,6 +6,6 @@
 # Don't want a minified CSS file? Uncomment the line below and comment out the current one.
 #sass --watch sass/style.sass:../lib/css/style.css --style expanded
 
-sass --watch sass/style.sass:../lib/css/style.min.css --style compressed
+sass --watch sass/style.sass:../lib/css/style.min.css --style compressed -r sass-media_query_combiner
 
 exit 0

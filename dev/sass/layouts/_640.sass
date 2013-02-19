@@ -1,0 +1,49 @@
+// article
+#wrap
+  padding: 0 em(20) em(60) em(20)
+
+article.post
+  +box-shadow(0px 0px 20px rgba(0,0,0,.07))
+  background: #fff
+  margin: em(60) em(0) //edited
+  div.featured-image
+    padding-bottom: em(40)
+  div.post-content
+    width: em(640)
+    margin: 0 auto
+    header
+      margin: em(30) 0 em(20) 0
+      a h1
+        font-weight: 400
+        margin-top: em(10)
+        margin-bottom: em(15)
+        font-size: em(30)
+        line-height: em(24)
+        color: #333
+      a.date
+        font-size: em(16)
+        margin-bottom: em(30)
+        color: #cecece
+
+
+// paragraphs
+p
+  font-size: em(16)
+  font-weight: 400
+  padding-bottom: $body-line-height
+  span.run-in
+    text-transform: capitalize
+    font-weight: 700
+    letter-spacing: 1px
+  &.intro
+    font-size: em(18)
+
+// read more
+.read-more
+  display: block
+  text-align: center
+  padding: em(10)
+  margin: em(30) 0
+  font-size: em(16)
+  &:hover
+    background: #fffae5

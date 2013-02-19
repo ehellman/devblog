@@ -1,8 +1,3 @@
-# import sass extensions
-retina_ext = File.join(File.dirname(__FILE__), 'dev/extensions/retina-images')
-require File.join(retina_ext, 'lib', 'sass_extensions.rb')
-add_import_path File.join(retina_ext, 'stylesheets')
-
 # compass
 http_path        = "/"
 sass_dir         = "dev/sass"

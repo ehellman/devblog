@@ -50,11 +50,10 @@ html, button, input, select, textarea
 a
   // Addresses outline displayed oddly in Chrome
   &:focus
-    outline: thin dotted
+    //outline: thin dotted
     // Webkit
-    outline: 5px auto -webkit-focus-ring-color
-    outline-offset: -2px
-
+    //outline: 5px auto -webkit-focus-ring-color
+    //outline-offset: -2px
 
   // Improves readability when focused and also mouse hovered in all browsers
   // people.opera.com/patrickl/experiments/keyboard/test
@@ -197,3 +196,7 @@ img
 // allow only vertical resizing of textareas
 textarea
   resize: vertical
+
+input, textarea
+  &:focus
+    outline: 0

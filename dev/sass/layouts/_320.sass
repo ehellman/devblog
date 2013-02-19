@@ -1,0 +1,54 @@
+body
+  background: url($sandnoise)
+
+$mobilegutter: 10
+
+#wrap
+  width: 100%
+  padding: em($mobilegutter) em($mobilegutter) em(40) em($mobilegutter)
+  +media($tablet)
+    padding: 0
+    @include outer-container
+
+article.post
+  +box-shadow(0px 0px 15px rgba(0,0,0,.07))
+  background: #fff
+  //border-top: 3px solid $brandColor
+  margin: em(0) em(0) em($mobilegutter) em(0)
+  padding: em(0) em(0) em(40) em(0)
+  +media($tablet)
+    margin: em(20) em(0) em(40) em(0)
+  div.featured-image
+    padding-bottom: 0
+    .flex-control-nav //FlexSlider
+      visibility: hidden
+      +media($tablet)
+        visibility: visible
+  div.post-content
+    padding: em(0) em(25)
+    +clearfix
+    header
+      text-align: center
+      margin: em(40) 0 em(35) 0
+      +clearfix
+      a h1
+        font-weight: 700
+        font-size: em(32)
+        line-height: em(22)
+        color: #333
+      a.date
+        font-size: em(16)
+        font-weight: 700
+        font-family: $heading-font-family
+        text-transform: uppercase
+        display: block
+        margin-bottom: em(25)
+        color: #C3C9D2
+
+// read more
+.read-more
+  display: block
+  text-align: center
+  padding: em(10)
+  margin: em(10) 0
+  font-size: em(16)

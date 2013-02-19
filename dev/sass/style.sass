@@ -2,14 +2,13 @@
 //$visual-grid: true
 //$visual-grid-color: #eee
 //$visual-grid-opacity: 0.4
-
 // frameworks and grid settings
 @import "frameworks/bourbon/bourbon"
 @import "frameworks/grid-settings"
 @import "frameworks/neat/neat"
 
-// extensions
-@import "retina-images"
+// font
+@import "font-awesome"
 
 // base
 @import "base/reset"
@@ -24,7 +23,12 @@
 @import "modules/typography"
 
 // build
-@import "partials/main"
-@import "partials/header"
-@import "partials/navigation"
-@import "partials/footer"
+@import "layouts/320"
+@import "layouts/navigation"
+@import "layouts/footer"
+//@media screen and (min-width: em(640))
+//  @import "layouts/640"
+//@media screen and (min-width: em(1025))
+//  @import "layouts/1025"
+//@media screen and (min-width: em(1279))
+//  @import "layouts/1280"
