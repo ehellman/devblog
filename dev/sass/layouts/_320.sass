@@ -1,54 +1,129 @@
 body
-  background: url($sandnoise)
+  background: url($lightgraynoise)
+  color: #444
+  z-index: 0
 
-$mobilegutter: 10
+$mobilegutter: 10px
+
+.slides li img
+  max-height: 300px
 
 #wrap
   width: 100%
-  padding: em($mobilegutter) em($mobilegutter) em(40) em($mobilegutter)
+  padding: $mobilegutter $mobilegutter 40px $mobilegutter
+  position: relative
+  border-bottom: 1px solid #fff
+  z-index: 0
   +media($tablet)
-    padding: 0
-    @include outer-container
+    padding: $mobilegutter*2
+  +media($tablet2)
+    padding: $mobilegutter*4
 
-article.post
+#wrap:after, #wrap:before 
+  top: 100%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+  z-index: 1
+
+
+#wrap:after 
+  border-top-color: #eaeaea
+  border-width: 38px
+  left: 50%
+  margin-left: -38px
+  z-index: 2
+
+#wrap:before 
+  border-color: rgba(245, 245, 245, 0)
+  border-top-color: #ccc
+  border-width: 44px
+  margin-top: 1px
+  left: 50%
+  margin-left: -44px
+  z-index: 1
+
+.post
   +box-shadow(0px 0px 15px rgba(0,0,0,.07))
-  background: #fff
+  background: url('../images/whitenoise.png')
   //border-top: 3px solid $brandColor
-  margin: em(0) em(0) em($mobilegutter) em(0)
-  padding: em(0) em(0) em(40) em(0)
+  margin: 0 0 $mobilegutter 0
+  padding: 0 0 40px 0
   +media($tablet)
-    margin: em(20) em(0) em(40) em(0)
-  div.featured-image
-    padding-bottom: 0
-    .flex-control-nav //FlexSlider
-      visibility: hidden
-      +media($tablet)
-        visibility: visible
-  div.post-content
-    padding: em(0) em(25)
-    +clearfix
-    header
-      text-align: center
-      margin: em(40) 0 em(35) 0
-      +clearfix
-      a h1
-        font-weight: 700
-        font-size: em(32)
-        line-height: em(22)
-        color: #333
-      a.date
-        font-size: em(16)
-        font-weight: 700
-        font-family: $heading-font-family
-        text-transform: uppercase
-        display: block
-        margin-bottom: em(25)
-        color: #C3C9D2
+    margin: 0 0 20px 0
+  +media($tablet2)
+    margin: 0 0 40px 0
 
-// read more
+.featured-image
+  padding-bottom: 0
+  overflow: hidden
+  .flex-control-nav //FlexSlider
+    visibility: hidden
+    +media($tablet)
+      visibility: visible
+
+.post-content
+  padding: 0 20px
+  +clearfix
+  +media($tablet)
+    padding: 0 80px
+  +media($tablet2)
+    padding: 0 140px
+  header
+    text-align: center
+    margin: 40px 0 25px 0
+    +clearfix
+    +media($tablet)
+      margin: 70px 0 35px 0
+    a h1
+      font-weight: 700
+      font-size: 22px
+      line-height: 30px
+      margin: 15px
+      color: #434343
+      +media($tablet)
+        margin-bottom: 10px
+        line-height: 36px
+        font-size: 26px
+    .date
+      font-size: 12px
+      font-weight: 400
+      font-family: $heading-font-family
+      display: block
+      color: #C3C9D2
 .read-more
   display: block
   text-align: center
-  padding: em(10)
-  margin: em(10) 0
-  font-size: em(16)
+  padding: 10px
+  margin: 10px 0 40px 0
+  font-size: 13px
+  color: lighten($linkBlue, 10%)
+  &:hover, &:active, &:focus
+    color: $linkBlue
+  +media($tablet)
+    font-size: 16px
+    margin: 20px 0 50px 0
+
+.post-details
+  font-size: 12px
+  color: darken(#C3C9D2, 10%)
+  text-shadow: none
+  margin: 0 auto
+  +clearfix
+  h5
+    color: darken(#C3C9D2, 40%)
+  i 
+    font-size: 16px
+  a
+    color: #C3C9D2
+    &:hover, &:active, &:focus
+      color: darken(#C3C9D2, 40%)
+  div
+    margin-bottom: 10px
+    +media($tablet)
+      @include span-columns(1)
+  .meta-comments
+  .meta-categories

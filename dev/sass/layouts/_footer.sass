@@ -1,23 +1,39 @@
 footer#primary-footer
   background: url($darkgraynoise)
-  color: #ddd
-  +box-shadow(0px 0px 15px rgba(0,0,0,.25))
+  color: #999
+  border-top: 5px solid #d5d5d5
+  +box-shadow(inset 0px 0px 15px rgba(0,0,0,.25))
+  +clearfix
+  z-index: 0
   h4
     color: #eee
-    font-weight: 900
-    font-size: em(14)
-    padding-bottom: em(10)
+    font-weight: 700
+    font-size: 12px
+    padding-bottom: 10px
+  a
+    color: #eee
 
 div#footer-widgets
-  padding: em(30) em(25)
-  div.textwidget
-    line-height: em(26)
-
-a[href="#top"]
-  margin: em(15) 0 0 0
-  display: block
+  padding: 30px 20px
+  +clearfix
+  +media($tablet)
+    padding: 40px 80px
+  +media($tablet2)
+    padding: 40px 140px
+.footer-widget
   text-align: center
-  color: #ccc
-  font-size: em(40)
-  &:hover, &:active
-    color: #aaa
+  margin: 30px 0
+  +media($tablet)
+    margin: 20px 0
+.textwidget
+
+#atop
+  color: #515151 !important
+  text-align: center
+  display: block
+  padding: 10px
+  z-index: 999
+  position: relative
+  font-size: 16px
+  margin-top: -13px
+  text-shadow: 1px 1px 0px #fff

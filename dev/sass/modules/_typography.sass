@@ -1,15 +1,16 @@
 // google fonts
-//@import url(http://fonts.googleapis.com/css?family=Merriweather:300,400,700,900)
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700)
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300,400,700,900)
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700)
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700)
 
 // define typographic variables
-$body-font-size      : em(14) !default
+$body-font-size      : 14px !default
 $body-line-height    : golden-ratio(1em, 1) !default
-$body-font-family    : "Open Sans", "Helvetica Neue", sans-serif !default
-$heading-font-family : "Open Sans Condensed", "Open Sans", "Helvetica Neue", sans-serif !default
+$body-font-family    : "Merriweather", "Helvetica Neue", sans-serif !default
+$heading-font-family : "Merriweather", "Helvetica Neue", sans-serif !default
 $code-font-family    : "Monaco", monospace
 
+$vertical-rhythm     : 25px
 // base
 body
   font: $body-font-size $body-font-family
@@ -28,32 +29,34 @@ button, input
 // headings
 h1,h2,h3,h4,h5,h6
   font-family: $heading-font-family
-  text-transform: uppercase
   line-height: $golden-ratio + em
   text-shadow: 0px 1px 3px rgba(0,0,0,.1)
 
 // paragraphs
 p
-  font-size: em(17)
-  line-height: em(26)
+  font-size: 14px
+  line-height: 23px
   font-weight: 400
-  padding-bottom: em(25)
+  padding-bottom: $vertical-rhythm
+  +media($tablet)
+    font-size: 15px
+    line-height: 26px
+    font-weight: 400
   a
     padding-bottom: 2px
-    border-bottom: 1px dotted lighten($linkBlue, 10%)
-    font-weight: 700
+    border-bottom: 1px dotted lighten($linkBlue, 40%)
   span.run-in
     text-transform: capitalize
     font-weight: 700
     letter-spacing: 1px
-  &.intro
-    line-height: em(27)
-    font-size: em(18)
 
 pre
-  background: #2b2b2b
-  padding: em(20)
-  margin-bottom: em(20)
-code
-  display: block
-  color: #eee
+  background: #eee
+  padding: 20px
+  margin-bottom: $vertical-rhythm
+  overflow-x: auto
+  white-space: pre
+  color: #787878
+  word-wrap: normal
+  +media($tablet)
+    font-size: 16px
