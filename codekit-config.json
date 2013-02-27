@@ -2,24 +2,24 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8248",
   "files" : {
-    "\/dev\/sass\/frameworks\/bourbon\/functions\/_render-gradients.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/functions\/_render-gradients.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/dev\/sass\/frameworks\/bourbon\/css3\/_appearance.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/css3\/_appearance.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/dev\/sass\/frameworks\/bourbon\/functions\/_render-gradients.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/functions\/_render-gradients.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "No Output Path",
@@ -499,16 +499,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/dev\/sass\/layouts\/_640.sass" : {
+    "\/dev\/sass\/frameworks\/bourbon\/css3\/_image-rendering.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/sass\/layouts\/_640.sass",
+      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/css3\/_image-rendering.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2,
+      "fileType" : 4,
       "debugStyle" : 0
     },
     "\/dev\/sass\/frameworks\/bourbon\/addons\/_html5-input-types.scss" : {
@@ -523,24 +523,24 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/dev\/sass\/layouts\/_640.sass" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/sass\/layouts\/_640.sass",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2,
+      "debugStyle" : 0
+    },
     "\/dev\/sass\/frameworks\/bourbon\/addons\/_clearfix.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/addons\/_clearfix.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/dev\/sass\/frameworks\/bourbon\/css3\/_image-rendering.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/css3\/_image-rendering.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "No Output Path",
@@ -617,6 +617,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/lib\/images\/darkgraynoise.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/images\/darkgraynoise.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/lib\/images\/darkgraynoise.png",
+      "initialSize" : 12530,
+      "fileType" : 8192
+    },
     "\/dev\/sass\/frameworks\/neat\/functions\/_new-breakpoint.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -628,17 +639,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/lib\/images\/darkgraynoise.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/images\/darkgraynoise.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/lib\/images\/darkgraynoise.png",
-      "initialSize" : 12530,
-      "fileType" : 8192
     },
     "\/dev\/sass\/modules\/_links.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -816,24 +816,24 @@
       "initialSize" : 32930,
       "fileType" : 8192
     },
-    "\/dev\/sass\/frameworks\/bourbon\/functions\/_radial-gradient.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/functions\/_radial-gradient.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/dev\/sass\/frameworks\/bourbon\/functions\/_linear-gradient.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/functions\/_linear-gradient.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/dev\/sass\/frameworks\/bourbon\/functions\/_radial-gradient.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/functions\/_radial-gradient.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "No Output Path",
@@ -1001,18 +1001,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/dev\/sass\/frameworks\/bourbon\/css3\/_background-image.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/css3\/_background-image.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/lib\/images\/bg_direction_nav.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1024,16 +1012,17 @@
       "initialSize" : 1866,
       "fileType" : 8192
     },
-    "\/lib\/js\/respond.js" : {
+    "\/dev\/sass\/frameworks\/bourbon\/css3\/_radial-gradient.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/js\/respond.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/lib\/js\/respond-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/css3\/_radial-gradient.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/dev\/sass\/modules\/_typography.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -1047,6 +1036,17 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
+    "\/lib\/js\/respond.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/js\/respond.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/lib\/js\/respond-ck.js",
+      "fileType" : 64
+    },
     "\/dev\/sass\/layouts\/_1025.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1059,12 +1059,12 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/dev\/sass\/frameworks\/bourbon\/css3\/_radial-gradient.scss" : {
+    "\/dev\/sass\/frameworks\/bourbon\/css3\/_background-image.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/css3\/_radial-gradient.scss",
+      "inputAbbreviatedPath" : "\/dev\/sass\/frameworks\/bourbon\/css3\/_background-image.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "No Output Path",

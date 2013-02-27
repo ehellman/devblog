@@ -2,28 +2,32 @@
   background: url($darkgraynoise)
   text-align: center
   color: #ddd
+  +clearfix
   +box-shadow(0px 0px 15px rgba(0,0,0,.25))
   margin: 0 0 $mobilegutter 0
   +media($tablet)
     margin: 0 0 20px 0
   +media($tablet2)
     margin: 0 0 40px 0
+    +box-shadow(0px 0px 35px rgba(0,0,0,.07))
+  +media($desktop)
+    @include outer-container
 
 
 #brand
-  color: #ddd
-  &:hover, &:active
-    color: #fff
+  padding: 30px 0
+  margin: 0 10px
+  +media($tablet)
+    padding: 40px 0
+  +media($tablet2)
+    padding: 40px 0 20px 0
   hgroup
-    padding: 30px 0
-    margin: 0 10px
-    +media($tablet)
-      padding: 50px 0
     h1
       font-size: 24px
       font-weight: 300
       line-height: 22px
-      margin: 0 0 5px 0
+      padding: 5px
+      color: #ddd
     h3
       font-size: 12px
       font-weight: 300
@@ -32,9 +36,10 @@
 
 #menu
   display: none
-  padding-bottom: 0
+  padding: 0
   +media($tablet2)
-  display: inline
+    display: block
+    padding: 0 0 30px 0
   ul
     text-align: center
     margin: 0 20px 20px 20px
@@ -42,25 +47,34 @@
     +media($tablet)
       margin: -20px 240px 40px 240px
     +media($tablet2)
-      //margin: -20px 340px 40px 340px
+      +box-shadow(0px 0px 0px rgba(0,0,0,0))
       text-align: left
       margin: 0
+      display: inline
     li
       border-bottom: 1px solid #222
+      +media($tablet2)
+        border: 0
+        display: inline
       a
         padding: 8px 14px
         color: #999
-        font-weight: 400
-        font-size: 14px
+        font-weight: 700
+        font-size: 12px
         font-family: $body-font-family
         background: #262626
+        text-transform: uppercase
         display: block
         +transition(all .5s)
         +media($tablet2)
           padding: 10px 14px
+          background: none
+          display: inline
         &.current, &:hover, &:active
           background: #151515
           color: #eee
+          +media($tablet2)
+            background: none
 
 .search
   display: none

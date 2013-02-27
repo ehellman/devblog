@@ -28,12 +28,12 @@
   <div id="wrap">
   <header id="primary-header">
     <?php include 'search.php'; ?>
-    <a href="#" id="brand">
+    <div id="brand">
       <hgroup>
-        <h1>author mcwriter</h1>
+        <a href="#"><h1>author mcwriter</h1></a>
         <h3>a blog about web development</h3>
       </hgroup>
-    </a>
+    </div>
     <nav id="menu">
       <ul>
         <li><a href="#">home</a></li>
