@@ -1,14 +1,14 @@
 %toggle-button
-  color: #eee
   font-size: 1.6em
   padding: em(2) em(6) em(4) em(6)
-  background: $brandColor
+  background: #222
+  color: #eee
   border: 0
 
 button.nav-toggle
   @extend %toggle-button
   margin-bottom: 0px
-  +media($tablet2)
+  +media($tablet)
     display: none
 
 button.search-toggle

@@ -39,7 +39,6 @@
         <li><a href="#">home</a></li>
         <li><a href="#">about</a></li>
         <li><a href="#">archive</a></li>
-        <li><a href="#">lab</a></li>
         <li><a href="#">contact</a></li>
       </ul>
     </nav>
