@@ -2,11 +2,7 @@
 
     <article class="post">
       <div class="featured-image">
-        <div class="flexslider">
-          <ul class="slides">
-            <li><img src="http://beautifulpixels.beautifulpixels.netdna-cdn.com/wp-content/uploads/2009/12/candy-bokeh.jpg" alt=""></li>
-          </ul> <!-- end slides -->
-        </div> <!-- end flexslider -->
+        <img src="http://beautifulpixels.beautifulpixels.netdna-cdn.com/wp-content/uploads/2009/12/candy-bokeh.jpg" alt="">
       </div> <!-- end featured-image -->
       <div class="post-content">
         <header>
@@ -16,12 +12,11 @@
         </header>
         <p>Coming out of the grunge, graffiti and David Carson era through the 90"s, there has been a major resurgence of interest in typography.</p>
         <p>Unfortunately, as with any <a href="#">popularity</a> surge, there have come with it a lot of misunderstandings of some of the terms and concepts that we use. This article will help you gain a clearer understanding of what typography is and isn"t, and why.</p>
-        <h4>CSS</h4>
-<pre>#body {
-  color: red;
-  background: yellow;
-  line-height: 1;
-}</pre>
+        <h4>SASS</h4>
+<pre>#primary-header
+  color: red
+  background: yellow
+  line-height: 1</pre>
         <p>One rather common example of this is the <b>myriad of blog posts</b> and showcases claiming to display “hand-lettered typography” — I’ve even heard university professors say it. Though the phrase seems to make sense, it’s actually a contradiction in terms — hand-lettering is not typography at all! Before you throw your pens and brushes at me in protest, please let me explain!.</p>
         <p>
           <h1>Heading 1</h1>
@@ -32,22 +27,22 @@
           <h6>Heading 6</h6>
         </p>
         <p>Hello this is a sample paragraph.</p>
-        <div class="article-author">
-          <h3>Written by <a href="#">Erik Hellman</a></h3>
-          <p>Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci.</p>
-        </div> <!-- end article-author -->
       </div> <!-- end post-content -->
       
+      <div class="article-author">
+        <h3>Written by <a href="#">Erik Hellman</a></h3>
+        <p>Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci.</p>
+      </div> <!-- end article-author -->
       
     </article>
     
     <div class="post-navigation">
-        <a href="#" class="page-next inactive">Newer post <i class="icon-chevron-right"></i></a>
-        <a href="#" class="page-previous"><i class="icon-chevron-left"></i> Previous post</a>
+        <a href="#" class="post-next inactive"><i class="icon-chevron-left"></i> Newer post</a>
+        <a href="#" class="post-previous">Previous post <i class="icon-chevron-right"></i></a>
     </div> <!-- end comment-navigation -->
     
     <div class="comments-area" id="comments">
-      <h3>This post has 14 comments</h3>
+      <h3>14 comments</h3>
       <ol class="comment-list">
         
         <li>
@@ -93,8 +88,8 @@
       </ol>
       
       <div class="comment-navigation">
-        <a href="#" class="page-previous inactive"><i class="icon-chevron-left"></i> Older</a>
-        <a href="#" class="page-next">Newer <i class="icon-chevron-right"></i></a>
+        <a href="#" class="comment-next">Newer <i class="icon-chevron-right"></i></a>
+        <a href="#" class="comment-previous inactive"><i class="icon-chevron-left"></i> Older</a>
       </div> <!-- end comment-navigation -->
       
       <div id="respond">
@@ -102,18 +97,19 @@
         <h3>Leave a reply</h3>
         <form action="" method="post" id="comment-form">
           <p>
-            <input type="text" value="" name="author" id="author">
             <label for="author">Name (required)</label>
+            <input type="text" value="" name="author" id="author">
           </p>
           <p>
-            <input type="text" value="" name="email" id="email">
             <label for="author">Email (required)(will not be published)</label>
+            <input type="text" value="" name="email" id="email">
           </p>
           <p>
-            <input type="text" value="" name="website" id="website">
             <label for="author">Website</label>
+            <input type="text" value="" name="website" id="website">
           </p>
           <p>
+            <label for="author">Your comment</label>
             <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
           </p>
           <p><input type="submit" value="Post Comment"></p>
